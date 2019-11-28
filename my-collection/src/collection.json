@@ -1,0 +1,25 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "my-collection": {
+      "description": "A blank schematic.",
+      "factory": "./my-collection/index#myCollection"
+    },
+    "create-file": {
+      "description": "A blank schematic.",
+      "factory": "./create-file/index#createFile",
+      "schema": "./create-file/schema.json",
+      "aliases": ["cf"]
+    },
+    "create-from-template": {
+      "description": "A blank schematic.",
+      "factory": "./create-from-template/index#createFromTemplate",
+      "schema": "./create-from-template/schema.json",
+      "aliases": ["cft"]
+    },
+    "extended-schematic": {
+      "description": "A blank schematic.",
+      "factory": "./extended-schematic/index#extendedSchematic"
+    }
+  }
+}
