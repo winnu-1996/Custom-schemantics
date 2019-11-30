@@ -5,6 +5,7 @@ import { CreateFileOptions } from './schema';
 // per file.
 export function createFile(_options: CreateFileOptions): Rule {
   return (tree: Tree, _context: SchematicContext) => {
+    _context.logger.info('Extending schematic'+JSON.stringify(_options));
     tree.create(_options.path,'File created from schematic!')
     return tree;
   };

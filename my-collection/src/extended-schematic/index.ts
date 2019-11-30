@@ -6,11 +6,12 @@ import { Rule, SchematicContext, Tree, chain, schematic } from '@angular-devkit/
 export function extendedSchematic(options: any): Rule {
 
   return (tree: Tree, context: SchematicContext) => {
+    context.logger.info('Extending schematic');
     return chain([
       schematic('create-from-template', {
       ...options
     }),
-    schematic('create-file', {
+    schematic('overwrite-file', {
       ...options
     }),
     extend()

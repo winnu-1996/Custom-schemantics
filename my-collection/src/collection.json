@@ -20,6 +20,15 @@
     "extended-schematic": {
       "description": "A blank schematic.",
       "factory": "./extended-schematic/index#extendedSchematic"
+    },
+    "extend-external-schematic": {
+      "description": "A blank schematic.",
+      "factory": "./extend-external-schematic/index#extendExternalSchematic"
+    },
+    "overwrite-file": {
+      "description": "A blank schematic.",
+      "factory": "./overwrite-file/index#overwriteFile",
+      "schema": "./overwrite-file/schema.json"
     }
   }
 }
